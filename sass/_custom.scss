@@ -120,6 +120,7 @@ form input, form textarea {
 
 .btn {
   font-family: Arial;
+  font-size: 12px;
   background: #3498db;
   background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
   background-image: -moz-linear-gradient(top, #3498db, #2980b9);
@@ -135,7 +136,6 @@ form input, form textarea {
   text-decoration: none;
   border: 0;
   cursor: pointer;
-  margin-bottom: 50px;
 }
 
 .btn:hover {
