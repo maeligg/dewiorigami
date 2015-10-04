@@ -16,7 +16,7 @@ html {
     text-align: center;
 }
 
-p {
+p, label {
   font-family: Georgia,Times,Times New Roman,serif;
   font-style: italic;
   line-height: 150%;
@@ -106,18 +106,16 @@ h2 {
   text-align: justify;
 }
 
-form p {
-  display: inline-block;
+form label {
+  display: block;
 }
 
-form p:nth-child(8) {
-  vertical-align: top;
-  margin-top: -5px;
+form input, form textarea {
+  margin: 10px 0;
 }
 
-form textarea {
-  position: relative;
-  left: 8px;
+#comment, label[for="comment"] {
+  visibility: hidden;
 }
 
 .btn {
