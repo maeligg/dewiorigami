@@ -25,6 +25,7 @@ p, label {
 h2 {
   font-family: 'Din-Bold';
   font-size: 42px;
+  margin-top: 0px;
 }
 
 .header {
@@ -155,17 +156,4 @@ form input, form textarea {
   left: 0;
   right: 0;
   font-size: 12px;
-}
-
-@media screen and (max-width : 800px) {
-
-  .about, .gallery, .links, .footer {
-    padding: 5% 5%;
-  }
-
-  .gallery-wrap{
-    width: 90%;
-  }
-
-
 }
