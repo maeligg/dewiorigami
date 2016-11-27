@@ -78,12 +78,7 @@ h2 {
 .links-wrap {
   margin: 0 auto;
   width: 30%;
-  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;      /* TWEENER - IE 10 */
   display: flex;
-  box-pack: center;      /* OLD - iOS 6-, Safari 3.1-6 */
-  box-pack: -webkit-center;      /* OLD - Android < 4.4 */
   justify-content: space-around;
 }
 
@@ -120,8 +115,6 @@ form input, form textarea {
   font-size: 12px;
   background: #3498db;
   background-image: linear-gradient(to bottom, #3498db, #2980b9);
-  -webkit-border-radius: 5;
-  -moz-border-radius: 5;
   border-radius: 5px;
   color: #ffffff;
   margin-top: 10px;
@@ -135,13 +128,4 @@ form input, form textarea {
   background: #3cb0fd;
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
-}
-
-.credits {
-  position: absolute;
-  margin: auto;
-  bottom: 10px;
-  left: 0;
-  right: 0;
-  font-size: 12px;
 }
