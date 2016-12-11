@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".gallery-wrap").slick({infinite:!0,autoplay:!0,slidesToShow:3,slidesToScroll:3})});

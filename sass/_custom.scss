@@ -142,3 +142,11 @@ form input, form textarea {
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
 }
+
+.slick-slide {
+  margin: 0 10px;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #1f1f1f;
+}
