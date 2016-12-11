@@ -52,30 +52,27 @@ module.exports = function(grunt) {
             dist: {
               src: 'css/*.css'
             }
-  },
+    },
 
-
-        watch: {
-
-                    scripts: {
-                        files: ['js/main.js'],
-                        tasks: ['uglify'],
-                    },
-                    images: {
-                        files: ['img/dev/*.{png,jpg,gif}'],
-                        tasks: ['imagemin'],
-                    },
-                    css: {
-                        files: ['sass/*.scss'],
-                        tasks: ['sass'],
-                    },
-                    postcss: {
-                        files: ['sass/*.scss'],
-                        tasks: ['postcss'],
-                    }
-                }
-
-    });
+    watch: {
+        scripts: {
+            files: ['js/main.js'],
+            tasks: ['uglify'],
+        },
+        images: {
+            files: ['img/dev/*.{png,jpg,gif}'],
+            tasks: ['imagemin'],
+        },
+        css: {
+            files: ['sass/*.scss'],
+            tasks: ['sass'],
+        },
+        postcss: {
+            files: ['sass/*.scss'],
+            tasks: ['postcss'],
+        }
+    }
+});
 
 // 3. Where we tell Grunt we plan to use this plug-in.
 grunt.loadNpmTasks('grunt-contrib-uglify');
