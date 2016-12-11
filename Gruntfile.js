@@ -50,38 +50,38 @@ module.exports = function(grunt) {
                 ]
             },
             dist: {
-              src: 'css/*.css'
+              src: 'css/main.css'
             }
-    },
+        },
 
-    watch: {
-        scripts: {
-            files: ['js/main.js'],
-            tasks: ['uglify'],
-        },
-        images: {
-            files: ['img/dev/*.{png,jpg,gif}'],
-            tasks: ['imagemin'],
-        },
-        css: {
-            files: ['sass/*.scss'],
-            tasks: ['sass'],
-        },
-        postcss: {
-            files: ['sass/*.scss'],
-            tasks: ['postcss'],
+        watch: {
+            scripts: {
+                files: ['js/main.js'],
+                tasks: ['uglify'],
+            },
+            images: {
+                files: ['img/dev/*.{png,jpg,gif}'],
+                tasks: ['imagemin'],
+            },
+            css: {
+                files: ['sass/*.scss'],
+                tasks: ['sass'],
+            },
+            postcss: {
+                files: ['sass/*.scss'],
+                tasks: ['postcss'],
+            }
         }
-    }
-});
+    });
 
-// 3. Where we tell Grunt we plan to use this plug-in.
-grunt.loadNpmTasks('grunt-contrib-uglify');
-grunt.loadNpmTasks('grunt-contrib-imagemin');
-grunt.loadNpmTasks('grunt-contrib-sass');
-grunt.loadNpmTasks('grunt-contrib-watch');
-grunt.loadNpmTasks('grunt-postcss');
+    // 3. Where we tell Grunt we plan to use this plug-in.
+    grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
+    grunt.loadNpmTasks('grunt-contrib-sass');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-postcss');
 
-// 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
-grunt.registerTask('default', ['uglify', 'imagemin', 'sass', 'postcss']);
+    // 4. Where we tell Grunt what to do when we type "grunt" into the terminal.
+    grunt.registerTask('default', ['uglify', 'imagemin', 'sass', 'postcss', 'watch']);
 
 };
