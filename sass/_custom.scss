@@ -18,7 +18,6 @@ html {
 
 p, label {
   font-family: Georgia,Times,Times New Roman,serif;
-  //font-style: italic;
   line-height: 150%;
 }
 
@@ -26,6 +25,10 @@ h2 {
   font-family: 'Din-Bold', sans-serif;
   font-size: 42px;
   margin-top: 0px;
+}
+
+section, footer {
+  padding: 10% 20%;
 }
 
 .header {
@@ -60,15 +63,10 @@ h2 {
   background: url("../img/about-bg.png") no-repeat center center;
   background-size: cover;
   color: #fff;
-  padding: 10% 25%;
 }
 
 .about-wrap {
   text-align: justify;
-}
-
-.gallery {
-  padding: 10% 25%;
 }
 
 .gallery-wrap {
@@ -85,7 +83,6 @@ h2 {
   position: relative;
   background: url("../img/links-bg.png") no-repeat center center;
   background-size: cover;
-  padding: 10% 25%;
 }
 
 .links-wrap {
@@ -104,7 +101,6 @@ h2 {
   background-color: #1f1f1f;
   min-height: 70%;
   color: #fff;
-  padding: 10% 25% 0;
 }
 
 .footer-wrap {
@@ -143,10 +139,29 @@ form input, form textarea {
   text-decoration: none;
 }
 
+.slick-track {
+  height: 300px;
+}
+
 .slick-slide {
   margin: 0 10px;
+  background-size: cover;
+  background-position: center;
 }
 
 .slick-prev:before, .slick-next:before {
   color: #1f1f1f;
+}
+
+.modal {
+  max-width: none;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+  text-align: center;
+
+  img {
+    max-height: 100vh;
+  }
 }
